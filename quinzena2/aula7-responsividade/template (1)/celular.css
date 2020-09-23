@@ -31,23 +31,24 @@ div {
     
     border: none;
     background-color: red;
-    height: 20vh;
+    height: 15vh;
     
 }
 
 .second-block {
     margin-left: 1em;
     border: none;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 
     gap: 1em
     border: none;
     margin-right:1em;
+    ;
 }
 
 .third-block {
     margin-left: 1em;
     border: none;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 
     gap: 1em;
     margin-right:1em;
     
@@ -56,16 +57,15 @@ div {
 .blc-block{
     margin-left: 1em;
     border: none;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 
     gap: 1em;
     margin-right:1em;
     
 }
 
 .wht-block {
-    
-    grid-template-columns: 1fr 1fr 1fr;
     border: none;
+    grid-template-columns: 1fr;
     margin-left: 1em;
     margin-right:1em;
 }
@@ -75,6 +75,7 @@ div {
     background-color: blue;
     justify-items: center;
     align-items: center;
+    height: 15vh;
     
     
 }
@@ -85,12 +86,14 @@ div {
     background-color: yellow;
     justify-items: center;
     align-items: center;
+    height: 15vh;
 }
 
 .green-block {
     background-color: green;
     justify-items: center;
     align-items: center;
+    height: 15vh;
 }
 
 .black-block {
@@ -98,58 +101,15 @@ div {
     color: white;
     justify-items: center;
     align-items: center;
+    height: 15vh;
 }
 
 .white-block {
+    
     background-color: white;
     justify-items: center;
     align-items: center;
+    height: 15vh;
 }
 
 
-
-.blue-yel{
-    grid-template-columns: 1fr 1fr;
-    border: none;
-    margin-left: 1em; 
-    margin-right: 1em;
-    height: 20vh;
-}
-.verde{
-    grid-template-columns: 1fr;
-    margin-left: 1em; 
-    margin-right: 1em;
-    height: 20vh;
-
-}
-
-.third-block{
-    grid-template-columns: 1fr 1fr;
-    height: 20vh;
-   
-    
-}
-
-.verde2 {
-    grid-template-columns: 1fr;
-    margin-left: 1em; 
-    margin-right: 1em;
-    height: 20vh;
-}
-
-.blc-block{
-    height: 60vh;
-    grid-row-start: ;
-}
-
-.wht-block{
-    grid-template-columns: 1fr 1fr;
-    height: 20vh;
-
-}
-.last-block{
-    grid-template-columns: 1rf;
-    margin-left: 1em;
-    margin-right: 1em;
-    height: 20vh;
-}

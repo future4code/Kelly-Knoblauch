@@ -62,11 +62,12 @@ div {
 }
 
 .wht-block {
-    
+    border: none;
     grid-template-columns: 1fr 1fr 1fr;
     border: none;
     margin-left: 1em;
     margin-right:1em;
+    border: none;
 }
 
 .blue-block {
@@ -97,25 +98,23 @@ div {
     color: white;
     justify-items: center;
     align-items: center;
+    border: none;
 }
 
 .white-block {
     background-color: white;
     justify-items: center;
     align-items: center;
-}
-
-
-
-.blue-yel{
-    grid-template-columns: 1fr 1fr;
     border: none;
 }
-.verde{
-    grid-template-columns: 1fr;
 
-}
+
+
+
+
+
 @media screen and (min-device-width : 481px) and (max-device-width : 600px) {
+
     
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
     /* celulares */
