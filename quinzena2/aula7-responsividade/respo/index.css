@@ -1,0 +1,120 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    border: none;
+    
+}
+
+
+
+div {
+    
+    
+    display: grid;
+    border: 1px solid black;
+    flex-direction: column;
+    gap: 1em
+
+}
+
+.main-container{
+    border: none;
+
+}
+
+
+
+#first-block {
+    
+    border: none;
+    background-color: red;
+    
+}
+
+.second-block {
+    margin-left: 1em;
+    border: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em
+    border: none;
+    margin-right:1em;
+}
+
+.third-block {
+    margin-left: 1em;
+    border: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    margin-right:1em;
+    
+}
+
+.blc-block{
+    margin-left: 1em;
+    border: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin-right:1em;
+    
+}
+
+.wht-block {
+    border: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: none;
+    margin-left: 1em;
+    margin-right:1em;
+    border: none;
+}
+
+.blue-block {
+    
+    background-color: blue;
+    justify-items: center;
+    align-items: center;
+    
+    
+}
+
+
+.yellow-block {
+
+    background-color: yellow;
+    justify-items: center;
+    align-items: center;
+}
+
+.green-block {
+    background-color: green;
+    justify-items: center;
+    align-items: center;
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    justify-items: center;
+    align-items: center;
+    border: none;
+}
+
+.white-block {
+    background-color: white;
+    justify-items: center;
+    align-items: center;
+    border: none;
+}
+
+
+
+
+
+
+@media screen and (min-device-width : 481px) and (max-device-width : 600px) {
+
+    
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* celulares */
