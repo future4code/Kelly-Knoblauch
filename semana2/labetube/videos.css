@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(224, 220, 220);
+}
+header {
+    display: flex;
+    background-color:rgb(255, 201, 101);
+    justify-content: space-between;
+    top: 0;
+    height: 10vh;
+    position: fixed top;
+}
+nav {
+    padding-top: 1%;
+    margin-right: 5%;
+    
+}
+main {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+}
+footer{
+     
+    background-color: rgb(84, 168, 236);
+    position: fixed bottom;
+    margin-bottom: 0px;
+    height: 20vh;
+}
