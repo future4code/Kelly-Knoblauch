@@ -37,3 +37,15 @@ RESULTADO ESPERADO:
                     1590
                     -10
 
+*/
+
+/*Exercícios de lógica de programação 
+
+1. forEach, map e filter
+
+2.a) False
+b) False
+c) True
+d) True
+e) True
+*/
