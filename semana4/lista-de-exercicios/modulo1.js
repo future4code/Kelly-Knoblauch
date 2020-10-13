@@ -67,7 +67,7 @@ while(i < quantidadeDeNumerosPares) {
         }
     } // para fazer o isoceles, teria que comparar "um lado === outro lado ou outro lado" até filtrar todos os lados se igualando apenas a mais um outro, e diferente ao terceiro.
 
-5. let diferenca
+5.  let diferenca
     let verificaDoisNumeros = (a, b) => {
         if (a > b) {
            console.log (`${a} é maior`)
@@ -98,4 +98,59 @@ while(i < quantidadeDeNumerosPares) {
     }
 
     verificaDoisNumeros (15,30)
+*/
+
+//Exercicios de funcao
+
+/*1.
+let numeros = [1, 2, 3, 4, 5, 6, 7]
+let verificaSegundoMaior = (array) => {
+    let novaArray = array
+    let primeiroMaior = array[0]
+
+    for (let numero of array) {
+        if (numero > primeiroMaior) {
+            primeiroMaior = numero
+        }
+    }
+
+    let i = array.indexOf(primeiroMaior)
+    let maiorNumero = novaArray.splice(i, 1)
+    let segundoMaior = 0
+
+    for (let numero of novaArray) {
+        if (numero > segundoMaior) {
+            segundoMaior = numero
+        }
+    }
+    console.log(segundoMaior)
+    
+    novaArray = array
+    let primeiroMenor = array[0]
+
+    for (let numero of array) {
+        if (numero < primeiroMenor) {
+            primeiroMenor = numero
+        }
+    }
+
+    i = array.indexOf(primeiroMenor)
+    novaArray.splice(i, 1)
+    
+    let segundoMenor = array[0]
+
+    for (let numero of array) {
+        if (numero < segundoMenor) {
+            segundoMenor = numero
+        }
+    }
+    console.log(segundoMenor)
+}
+verificaSegundoMaior(numeros)
+
+2.
+let criarAlert = () => {
+    window.alert("Hello Labenu")
+    }
+    criarAlert()
 */
