@@ -48,4 +48,54 @@ b) False
 c) True
 d) True
 e) True
+
+3. Não funciona, pois o contador "i" não está exercendo a funçao de encrementar o próximo valor, e nem há valores a serem lidos.
+const quantidadeDeNumerosPares = prompt("Digite um número")
+let i = 0
+while(i < quantidadeDeNumerosPares) {
+  console.log(i*2)
+  i++
+}
+
+4. let verificarTriangulo = (a, b, c) => {
+        if ((a === b) && (a === c) && (b === c)) {
+            return "Equilátero"
+        } else if ((a !== b) && (a !== c) && (b !== c)) {
+            return "Escaleno"
+        } else {
+            return "Isósceles"
+        }
+    } // para fazer o isoceles, teria que comparar "um lado === outro lado ou outro lado" até filtrar todos os lados se igualando apenas a mais um outro, e diferente ao terceiro.
+
+5. let diferenca
+    let verificaDoisNumeros = (a, b) => {
+        if (a > b) {
+           console.log (`${a} é maior`)
+        } else if (b > a) {
+            console.log (`${b} é maior`)
+        } else {
+            console.log ("São iguais")
+        }
+
+        if (a % b === 0) {
+            console.log (`${a} é divisível por ${b}`)
+        } else {
+            console.log (`${a} não é divisível por ${b}`)
+        }
+        
+        if (b % a === 0) {
+            console.log (`${b} é divisível por ${a}`) 
+        } else {
+            console.log (`${b} não é divisível por ${a}`)
+        }
+        
+        if ((a - b) >= 0) {
+            diferenca = a - b
+        } else {
+            diferenca = (a - b) * (-1)
+        }
+        console.log (diferenca)
+    }
+
+    verificaDoisNumeros (15,30)
 */
