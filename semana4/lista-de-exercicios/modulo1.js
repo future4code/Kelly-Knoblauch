@@ -153,4 +153,6 @@ let criarAlert = () => {
     window.alert("Hello Labenu")
     }
     criarAlert()
+
+criarAlert()
 */
