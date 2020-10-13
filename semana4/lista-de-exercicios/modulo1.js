@@ -204,3 +204,162 @@ console.log(pessoa)
 console.log(anonimizarPessoa())
 */
 
+//Exercícios de funções de array
+
+// 1.
+/*
+const novoArray = []
+const novoArray2 = []
+
+const pessoas = [
+	{ nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+//1.a)
+/*
+const selecionarAdultos = pessoas.filter((pessoas) => {
+    if (pessoas.idade >= 20) {
+        return novoArray.push(pessoas.idade)
+    }else{
+        return false
+    }
+})
+console.log(novoArray)
+*/
+
+//1.b)
+/*
+const selecionarJovens = pessoas.filter((pessoas) => {
+    if (pessoas.idade < 20) {
+        return novoArray2.push(pessoas.idade)
+    }else{
+        return false
+    }
+})
+console.log(novoArray2)
+*/
+
+/*
+ 2. 
+const array = [1, 2, 3, 4, 5, 6]
+*/
+//2.a)
+/*
+let dobrarValor = (array) => {
+    let arrayNova = []
+    array.forEach((elemento) => {
+        arrayNova.push(elemento * 2)
+    })
+    return arrayNova
+}
+console.log(dobrarValor(array))
+*/
+
+/*
+2.b)
+let triplicarValorString = (array) => {
+    let novaArray2 = []
+    array.forEach((elemento) => {
+        novaArray2.push(String(elemento * 3))
+    })
+    return novaArray2
+}
+console.log(triplicarValorString(array))
+*/
+
+/*
+2.c)
+let verificaParOuImpar = (array) => {
+    let novaArray3 = []
+    array.forEach((numero) => {
+        if (numero % 2 === 0) {
+            novaArray3.push(`${numero} é par`)
+        } else {
+            novaArray3.push(`${numero} é ímpar`)
+        }  
+    })
+    return novaArray3
+}
+console.log(verificaParOuImpar(array))
+*/
+
+/* 3
+const pessoas = [
+	{ nome: "Paula", idade: 12, altura: 1.8},
+	{ nome: "João", idade: 20, altura: 1.3},
+	{ nome: "Pedro", idade: 15, altura: 1.9},
+	{ nome: "Luciano", idade: 22, altura: 1.8},
+	{ nome: "Artur", idade: 10, altura: 1.2},
+	{ nome: "Soter", idade: 70, altura: 1.9}
+]
+3.a)
+const permitidas = pessoas.filter((pessoa) => {
+    if (pessoa.altura >= 1.5 && pessoa.idade > 14 && pessoa.idade < 60) {
+        return true
+    }else{
+        return false
+    })
+console.log(permitidas)
+*/
+
+//3.b)
+/*
+const naoPermitidas = pessoas.filter((pessoa) => {
+    if (pessoa.altura < 1.5 && pessoa.idade <= 14 && pessoa.idade > 60) {
+        return true
+    }else{
+        return false
+    })
+console.log(naoPermitidas)
+*/
+
+/* 4.
+const consultas = [
+	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+]
+let arrayEmail = []
+consultas.forEach((pessoa) => {
+    if (pessoa.genero === "masculino") {
+        arrayEmail.push(`Olá, Sr. ${ pessoa.nome }. Estamos enviando esta mensagem para lembrá-lo da sua consulta no dia ${ pessoa.dataDaConsulta }. Por favor, acuse o recebimento deste e-mail.`)
+    } else {
+        arrayEmail.push(`Olá, Sra. ${ pessoa.nome }. Estamos enviando esta mensagem para lembrá-la da sua consulta no dia ${ pessoa.dataDaConsulta }. Por favor, acuse o recebimento deste e-mail.`)
+    }  
+})
+console.log(arrayEmail)
+let arrayEmailCancelado = []
+consultas.forEach((pessoa) => {
+    if (pessoa.genero === "masculino") {
+        arrayEmailCancelado.push(`Olá, Sr. ${ pessoa.nome }. Infelizmente, sua consulta marcada para o dia ${ pessoa.dataDaConsulta } foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la.`)
+    } else {
+        arrayEmailCancelado.push(`Olá, Sra. ${ pessoa.nome }. Infelizmente, sua consulta marcada para o dia ${ pessoa.dataDaConsulta } foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la.`)
+    }  
+})
+console.log(arrayEmailCancelado)
+*/
+
+/* 5.
+const conta = [
+	{ cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+	{ cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+	{ cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+	{ cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+	{ cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+	{ cliente: "Soter", saldoTotal: 1200, compras: [] }
+]
+let atualizarSaldoTotal = (array) => {
+    array.forEach((conta) => {
+        let totalCompras = 0
+        for (let valor of conta.compras) {
+            totalCompras = totalCompras + valor
+        }
+        conta.saldoTotal = conta.saldoTotal - totalCompras
+    })
+    return conta
+}
+console.log(atualizarSaldoTotal(conta))
+*/
