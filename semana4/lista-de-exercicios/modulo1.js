@@ -1,4 +1,4 @@
-/*EXERCÍCIO DE INTERPRETAÇÃO 
+/*Exercício de interpretação 
 
 1. O QUE FAZ: transforma valor de dólar em reais, uma vez que multiplica pela cotação em reais.
 COMO FAZ: A funçao é invocada com um valor de parâmetro de escolha (valor que quero transformar de dolar para real), perguntando, com um prompt, ao usuário o 
@@ -100,7 +100,7 @@ while(i < quantidadeDeNumerosPares) {
     verificaDoisNumeros (15,30)
 */
 
-//Exercicios de funcao
+//Exercicios de funções
 
 /*1.
 let numeros = [1, 2, 3, 4, 5, 6, 7]
@@ -150,9 +150,57 @@ verificaSegundoMaior(numeros)
 
 2.
 let criarAlert = () => {
-    window.alert("Hello Labenu")
+    window.alert("Hello future (Labenu)")
     }
     criarAlert()
 
 criarAlert()
 */
+
+//Exercícios de Objetos
+
+/* 1. Arrays são listas de elementos ordenados. Enquanto objetos são listas mais organizadas, contendo chaves e valor como propriedade.
+Podemos usar array quando queremos utilizar de elementos "soltos". Já um objeto organiza uma lista mais categoricamente do que apenas ordem de elemento.
+
+2.
+    let criaRetangulo = (lado1, lado2) => {
+        return retangulo = {
+            largura: lado1, 
+            altura: lado2, 
+            perimetro: (2 * (lado1 + lado2)), 
+            area: (lado1 * lado2)
+        }
+    }
+    ex:
+    console.log(criaRetangulo(10,15)) 
+
+ 3.
+    const filmeFavorito = {
+        titulo: "Barbie lago dos cisnes", 
+        ano: 2003, 
+        diretore: "Owen Hurley", 
+        atore: ["Barbie", "Odila", "Feiticeiro Ruth", "O Príncipe"]
+    }
+    console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretore} e estrelado por ${filmeFavorito.atore[0]}, ${filmeFavorito.atore[1]}, ${filmeFavorito.atore[2]} e ${filmeFavorito.atore[3]}`)
+
+4.
+const pessoa = {
+    nome: "Kelly Knoblauch", 
+    idade: 23, 
+    email: "kellyknobla@gmail.com", 
+    endereco: "Curitiba - Pr"
+}
+
+let anonimizarPessoa = () => {
+    const anonimato = {
+        ...pessoa,
+        nome: "ANÔNIMO",
+        email: "anonimo@gmail.com"
+    }
+    return anonimato
+}
+    
+console.log(pessoa)
+console.log(anonimizarPessoa())
+*/
+
