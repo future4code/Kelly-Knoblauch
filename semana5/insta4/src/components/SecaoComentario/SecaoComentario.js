@@ -3,7 +3,7 @@ import './SecaoComentario.css'
 
 export class SecaoComentario extends Component {
 	state = {
-		inputDeComentario: ""
+		inputDeComentario: " "
 	}
 
 	onChangeComentario=(event) => {
