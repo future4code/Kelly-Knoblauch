@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import axios from "axios";
+import PaginaDeRegistro from './components/PaginaDeRegistro';
+import ListaDeUsuarios from './components/ListaDeUsuarios';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    paginaRegistro: true
+  }
+
+  mudarPagina = () => {
+    this.setState({paginaRegistro: !this.state.paginaRegistro})
+  }
+
+  render() {
+    const paginaExibida = () => {
+      if (this.state.paginaRegistro) {
+        return <PaginaDeRegistro botaoMudarPagina={this.mudarPagina}/>
+      } else {
+        return <ListaDeUsuarios botaoMudarPagina={this.mudarPagina}/>
+      }
+    }
+    
+    return(
+      <div className="containerFlex">
+        {paginaExibida()}
+      </div>
+    )
+  }
 }
 
 export default App;
