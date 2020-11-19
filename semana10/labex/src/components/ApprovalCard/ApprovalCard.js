@@ -6,7 +6,7 @@ import {
   ApprovedApplicationText,
 } from './styled'
 
-const ApprovedCard = (props) => {
+const ApprovalCard = (props) => {
   return (
     <ApprovedCardWrapper>
       <h5>Nome: <DetailsSpan>{ props.candidateName }</DetailsSpan></h5>
@@ -22,4 +22,4 @@ const ApprovedCard = (props) => {
   )
 }
 
-export default ApprovedCard
+export default ApprovalCard

@@ -17,6 +17,9 @@ const HomePage = () => {
   const token = window.localStorage.getItem("token")
 
   return (
+
+    //a lógica do token é para não aparecer os botões de sign up e login ao voltar para a home quando já estiver logado
+    
     <HomePageWrapper>
       <h2>Home</h2>
       <NavButtonsWrapper>
