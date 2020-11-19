@@ -3,12 +3,12 @@ import { useHistory } from 'react-router-dom'
 import {
   goToHomePage,
   goToListTripsPage,
-} from '../../actions/goToPages'
+} from '../../historyRequisition/goToPages'
 import { useForm } from '../../hooks/useForm'
 import { useProtectPage } from '../../hooks/useProtectedPage'
 import { baseUrl } from '../../constants/axiosConstants'
 import { planetsList } from '../../constants/Lists'
-import { createTrip } from '../../actions/requests'
+import { createTrip } from '../../historyRequisition/requisitions'
 import {
   CreateTripScreenWrapper,
   FormWrapper,

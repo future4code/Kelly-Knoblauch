@@ -5,16 +5,16 @@ import {
   goToListTripsPage,
 } from '../../historyRequisition/goToPages'
 import { useForm } from '../../hooks/useForm'
-import { login } from '../../historyRequisition/requisitions'
+import { signUp } from '../../historyRequisition/requisitions'
 import { baseUrl } from '../../constants/axiosConstants'
 import {
-  LoginScreenWrapper,
+  SignupScreenWrapper,
   FormWrapper,
   NavButtonsWrapper,
 } from './styled'
 
 const LoginPage = () => {
-  const { form, onChange, resetState } = useForm({
+  const { form, onChange } = useForm({
     email: "",
     password: ""
   })
@@ -41,12 +41,12 @@ const LoginPage = () => {
       password: form.password
     }
 
-    login(`${ baseUrl }/login`, body, history, resetState)
+    signUp(`${ baseUrl }/signup`, body, history)
   }
 
   return (
-    <LoginScreenWrapper>
-      <h2>Login</h2>
+    <SignupScreenWrapper>
+      <h2>Criar usuário</h2>
       <FormWrapper onSubmit={ handleSubmittion } >
         <label>
           E-Mail:
@@ -68,15 +68,16 @@ const LoginPage = () => {
             required
           />
         </label>
-        <button>Enviar</button>
+        <button>Criar novo usuário</button>
       </FormWrapper>
       <NavButtonsWrapper>
         <button onClick={ () => goToHomePage(history) }>
           Voltar para Home
         </button>
       </NavButtonsWrapper>
-    </LoginScreenWrapper>
+    </SignupScreenWrapper>
   )
 }
 
 export default LoginPage
+

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const LoginScreenWrapper = styled.div`
+export const SignupScreenWrapper = styled.div`
 	max-width: 400px;
   margin: 0 auto;
   h2 {

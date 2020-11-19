@@ -4,7 +4,7 @@ import {
   goToHomePage,
   goToTripDetailsPage, 
   goToCreateTripPage,
-} from '../../actions/goToPages'
+} from '../../historyRequisition/goToPages'
 import { baseUrl } from '../../constants/axiosConstants'
 import { useProtectPage } from '../../hooks/useProtectedPage'
 import { useGetTrips } from '../../hooks/useRequestData'

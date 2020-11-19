@@ -5,7 +5,7 @@ import {
   goToLoginPage,
   goToSignupPage,
   goToListTripsPage,
-} from '../../actions/goToPages'
+} from '../../historyRequisition/goToPages'
 import { 
   HomePageWrapper, 
   NavButtonsWrapper, 
