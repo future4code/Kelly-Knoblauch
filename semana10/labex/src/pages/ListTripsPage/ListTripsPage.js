@@ -9,10 +9,10 @@ import { baseUrl } from '../../constants/axiosConstants'
 import { useProtectPage } from '../../hooks/useProtectedPage'
 import { useGetTrips } from '../../hooks/useRequestData'
 import {
-  ListTripsScreenWrapper,
-  TripsListWrapper,
+  ListTripsContainer,
+  TripsListContainer,
   TripsListItem,
-  NavButtonsWrapper,
+  ButtonsContainer,
 } from './styled'
 
 const ListTripsPage = () => {
@@ -26,9 +26,9 @@ const ListTripsPage = () => {
   }
 
   return (
-    <ListTripsScreenWrapper>
+    <ListTripsContainer>
       <h2>Lista de Viagens</h2>
-      <TripsListWrapper>
+      <TripsListContainer>
         {tripsList.map(item => {
           return (
             <TripsListItem 
@@ -43,13 +43,13 @@ const ListTripsPage = () => {
         <button onClick={ () => goToCreateTripPage(history) }>
           Criar Viagem
         </button>
-      </TripsListWrapper>
-      <NavButtonsWrapper>
+      </TripsListContainer>
+      <ButtonsContainer>
         <button onClick={ () => goToHomePage(history) }>
           Ir para Home
         </button>
-      </NavButtonsWrapper>
-    </ListTripsScreenWrapper>
+      </ButtonsContainer>
+    </ListTripsContainer>
   )
 }
 

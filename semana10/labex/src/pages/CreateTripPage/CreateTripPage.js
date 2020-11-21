@@ -10,9 +10,9 @@ import { baseUrl } from '../../constants/axiosConstants'
 import { planetsList } from '../../constants/Lists'
 import { createTrip } from '../../historyRequisition/requisitions'
 import {
-  CreateTripScreenWrapper,
-  FormWrapper,
-  NavButtonsWrapper,
+  CreateTripContainer,
+  FormContainer,
+  ButtonsContainer,
 } from './styled'
 
 const CreateTripPage = () => {
@@ -48,9 +48,9 @@ const CreateTripPage = () => {
   }
 
   return (
-    <CreateTripScreenWrapper>
+    <CreateTripContainer>
       <h2>Criar Viagem</h2>
-      <FormWrapper onSubmit={ handleSubmittion } >
+      <FormContainer onSubmit={ handleSubmittion } >
         <label>
           Nome:
           <input 
@@ -116,16 +116,16 @@ const CreateTripPage = () => {
           />
         </label>
         <button>Criar</button>
-      </FormWrapper>
-      <NavButtonsWrapper>
+      </FormContainer>
+      <ButtonsContainer>
         <button onClick={ () => goToListTripsPage(history) }>
           Voltar para Lista de Viagens
         </button>
         <button onClick={ () => goToHomePage(history) }>
           Ir para Home
         </button>
-      </NavButtonsWrapper>
-    </CreateTripScreenWrapper>
+      </ButtonsContainer>
+    </CreateTripContainer>
   )
 }
 

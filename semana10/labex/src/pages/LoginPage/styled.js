@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const LoginScreenWrapper = styled.div`
+export const LoginContainer = styled.div`
 	max-width: 560px;
   margin: 0 auto;
   
@@ -14,7 +14,7 @@ export const LoginScreenWrapper = styled.div`
   }
 `
 
-export const FormWrapper = styled.form`
+export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -37,7 +37,7 @@ export const FormWrapper = styled.form`
   }
 `
 
-export const NavButtonsWrapper = styled.div`
+export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   padding: 1em 0;

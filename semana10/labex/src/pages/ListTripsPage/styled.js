@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ListTripsScreenWrapper = styled.div`
+export const ListTripsContainer = styled.div`
   max-width: 560px;
   margin: 0 auto;
    
@@ -15,7 +15,7 @@ export const ListTripsScreenWrapper = styled.div`
   }
   `
 
-export const TripsListWrapper = styled.div`
+export const TripsListContainer = styled.div`
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -36,7 +36,7 @@ export const TripsListItem = styled.div`
   cursor: pointer;
 `
 
-export const NavButtonsWrapper = styled.div`
+export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   padding: 1em 0;

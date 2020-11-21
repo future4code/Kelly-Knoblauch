@@ -7,9 +7,9 @@ import { countriesList } from '../../constants/Lists'
 import { useGetTrips } from '../../hooks/useRequestData'
 import { applyToTrip } from '../../historyRequisition/requisitions'
 import { 
-  ApplicationScreenWrapper,
-  FormWrapper, 
-  NavButtonsWrapper, 
+  ApplicationContainer,
+  FormContainer, 
+  ButtonsContainer, 
 } from './styled'
 
 const ApplicationFormPage = () => {
@@ -48,9 +48,9 @@ const ApplicationFormPage = () => {
   }
 
   return (
-    <ApplicationScreenWrapper>
+    <ApplicationContainer>
       <h2>Formulário de Inscrição</h2>
-      <FormWrapper onSubmit={ handleSubmittion } >
+      <FormContainer onSubmit={ handleSubmittion } >
         <label>
           Nome: {" "}
           <input 
@@ -138,13 +138,13 @@ const ApplicationFormPage = () => {
           </select>
         </label>
         <button>Inscrever-se</button>
-      </FormWrapper>
-      <NavButtonsWrapper>
+      </FormContainer>
+      <ButtonsContainer>
         <button onClick={ () => goToHomePage(history) }>
           Voltar para Home
         </button>
-      </NavButtonsWrapper>
-    </ApplicationScreenWrapper>
+      </ButtonsContainer>
+    </ApplicationContainer>
   )
 }
 

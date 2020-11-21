@@ -8,9 +8,9 @@ import { useForm } from '../../hooks/useForm'
 import { login } from '../../historyRequisition/requisitions'
 import { baseUrl } from '../../constants/axiosConstants'
 import {
-  LoginScreenWrapper,
-  FormWrapper,
-  NavButtonsWrapper,
+  LoginContainer,
+  FormContainer,
+  ButtonsContainer,
 } from './styled'
 
 const LoginPage = () => {
@@ -45,9 +45,9 @@ const LoginPage = () => {
   }
 
   return (
-    <LoginScreenWrapper>
+    <LoginContainer>
       <h2>Login</h2>
-      <FormWrapper onSubmit={ handleSubmittion } >
+      <FormContainer onSubmit={ handleSubmittion } >
         <label>
           E-Mail:
           <input 
@@ -69,13 +69,13 @@ const LoginPage = () => {
           />
         </label>
         <button>Enviar</button>
-      </FormWrapper>
-      <NavButtonsWrapper>
+      </FormContainer>
+      <ButtonsContainer>
         <button onClick={ () => goToHomePage(history) }>
           Voltar para Home
         </button>
-      </NavButtonsWrapper>
-    </LoginScreenWrapper>
+      </ButtonsContainer>
+    </LoginContainer>
   )
 }
 
