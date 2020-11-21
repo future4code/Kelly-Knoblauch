@@ -4,7 +4,7 @@ export const ApprovedCardWrapper = styled.div`
   width: 28%;
   height: 240px;
   padding: 0 0.8em;
-  border: 1px dotted crimson;
+  border: 1px dotted blueviolet;
 `
 
 export const ApprovedApplicationTextLabel = styled.h5`
