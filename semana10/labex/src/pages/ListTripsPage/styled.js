@@ -1,14 +1,19 @@
 import styled from 'styled-components'
 
 export const ListTripsScreenWrapper = styled.div`
-	max-width: 480px;
+  max-width: 560px;
   margin: 0 auto;
+   
+  
+  
   h2 {
     text-align: center;
-    margin: 0 25%;
-    border-bottom: 3px solid crimson;
+    background-color: blueviolet;
+    margin:  0 20%;
+    margin-bottom: 20%;
+    
   }
-`
+  `
 
 export const TripsListWrapper = styled.div`
   width: 80%;
@@ -25,7 +30,7 @@ export const TripsListWrapper = styled.div`
 `
 
 export const TripsListItem = styled.div`
-  border-bottom: 1px dashed crimson;
+  border-bottom: 1px dashed blueviolet;
   margin-bottom: 1.2em;
   padding: 0 1.2em;
   cursor: pointer;

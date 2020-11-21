@@ -4,7 +4,7 @@ export const CandidateCardWrapper = styled.div`
   width: 28%;
   height: 240px;
   padding: 0 0.8em;
-  border: 1px dotted crimson;
+  border: 1px dotted blueviolet;
 `
 
 export const CandidateApplicationTextLabel = styled.h5`
@@ -26,13 +26,13 @@ export const DecideCandidateButtonWrapper = styled.div`
 `
 
 export const RejectButton = styled.button`
-  background-color: red;
+  background-color: blue;
   font-weight: 700;
   color: white;
 `
 
 export const ApproveButton = styled.button`
-  background-color: green;
+  background-color: purple;
   font-weight: 700;
   color: white;
 `

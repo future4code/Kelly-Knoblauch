@@ -1,12 +1,16 @@
 import styled from 'styled-components'
 
 export const LoginScreenWrapper = styled.div`
-	max-width: 400px;
+	max-width: 560px;
   margin: 0 auto;
+  
+  
   h2 {
     text-align: center;
-    margin: 0 25%;
-    border-bottom: 3px solid crimson;
+    background-color: blueviolet;
+    margin:  0 20%;
+    margin-bottom: 20%;
+    
   }
 `
 
@@ -28,7 +32,7 @@ export const FormWrapper = styled.form`
     display: inline-block;
     font-size: 1rem;
     font-weight: 700;
-    padding: 0.8em 0.4em;
+    padding: 1em 4em;
     cursor: pointer;
   }
 `

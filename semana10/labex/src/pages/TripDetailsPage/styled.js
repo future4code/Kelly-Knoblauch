@@ -1,21 +1,26 @@
 import styled from 'styled-components'
 
 export const TripDetailsScreenWrapper = styled.div`
-	max-width: 720px;
+	max-width: 560px;
   margin: 0 auto;
+   
+  
+  
   h2 {
     text-align: center;
-    margin: 0 25%;
-    border-bottom: 3px solid crimson;
+    background-color: blueviolet;
+    margin:  0 20%;
+    margin-bottom: 20%;
+    
   }
-`
+  `
 
 export const TripDetailsWrapper = styled.div`
-  margin: 0 160px;
+  
   
   h3 {
-    border-bottom: 1px dashed crimson;
-    margin: 1em 16%;
+    border-bottom: 1px solid blueviolet;
+    margin: 1em 15%;
     text-align: center;
   }
 `
@@ -29,7 +34,7 @@ export const TripDescription = styled.p`
 `
 
 export const CandidatesTitle = styled.h4`
-  border-top: 3px double crimson;
+  border-top: 3px double blueviolet;
   text-align: center;
   padding-top: 0.6em;
   margin-bottom: 0.8em;
@@ -40,7 +45,7 @@ export const CandidateListWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.8em;
+  gap: 1em;
 `
 
 export const DetailsSpan = styled.span`

@@ -7,8 +7,8 @@ import {
   goToListTripsPage,
 } from '../../historyRequisition/goToPages'
 import { 
-  HomePageWrapper, 
-  NavButtonsWrapper, 
+  HomeContainer, 
+  ButtonsContainer, 
 } from './styled'
 
 const HomePage = () => {
@@ -20,11 +20,11 @@ const HomePage = () => {
 
     //a lógica do token é para não aparecer os botões de sign up e login ao voltar para a home quando já estiver logado
     
-    <HomePageWrapper>
-      <h2>Home</h2>
-      <NavButtonsWrapper>
+    <HomeContainer>
+      <h2>Bem vinda(o) ao Labex!</h2>
+      <ButtonsContainer>
         <button onClick={ () => goToApplicationFormPage(history) }>
-          Ir para Formulário de Inscrição
+          Formulário de inscrição de viagens
         </button>
         { token ? (
           <button onClick={ () => goToListTripsPage(history) }>
@@ -41,8 +41,8 @@ const HomePage = () => {
           </div>
         ) }
         
-      </NavButtonsWrapper>
-    </HomePageWrapper>
+      </ButtonsContainer>
+    </HomeContainer>
   )
 }
 

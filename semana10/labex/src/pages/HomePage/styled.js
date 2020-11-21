@@ -1,21 +1,25 @@
 import styled from 'styled-components'
 
-export const HomePageWrapper = styled.div`
+export const HomeContainer = styled.div`
 	max-width: 560px;
   margin: 0 auto;
+   
+  
   
   h2 {
     text-align: center;
-    margin: 0 25%;
-    border-bottom: 3px solid crimson;
+    background-color: blueviolet;
+    margin:  0 20%;
+    margin-bottom: 20%;
+    
   }
 `
 
-export const NavButtonsWrapper = styled.div`
+export const ButtonsContainer = styled.div`
   height: 240px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  
   align-items: center;
   padding: 1em 0;
   div {
@@ -24,10 +28,12 @@ export const NavButtonsWrapper = styled.div`
   }
   button {
     display: inline-block;
+    margin-top: 10%; 
     width: 320px;
     font-size: 1rem;
     font-weight: 700;
-    padding: 0.8em 0.4em;
+    padding: 1em 1em;
     cursor: pointer;
+    
   }
 `

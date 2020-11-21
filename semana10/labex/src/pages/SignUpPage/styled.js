@@ -1,12 +1,16 @@
 import styled from 'styled-components'
 
 export const SignupScreenWrapper = styled.div`
-	max-width: 400px;
+	max-width: 560px;
   margin: 0 auto;
+  
+  
   h2 {
     text-align: center;
-    margin: 0 25%;
-    border-bottom: 3px solid crimson;
+    background-color: blueviolet;
+    margin:  0 20%;
+    margin-bottom: 20%;
+    
   }
 `
 
