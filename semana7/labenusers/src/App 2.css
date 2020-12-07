@@ -1,0 +1,15 @@
+.containerFlex{
+  display: flex;
+  justify-content: center;
+}
+
+.listaDeRegistros{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 8px;
+}
+
+body{
+  background-color: aqua;
+}
